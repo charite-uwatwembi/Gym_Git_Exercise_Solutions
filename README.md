@@ -410,3 +410,36 @@ Your branch is up to date with 'origin/main'.
 Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
 $
 ```
+
+# Bundle 3
+
+## Exercise 1
+
+```bash
+git checkout -b ft/team-page
+touch team.html
+git add team.html
+git commit -m "Add team.html page"
+git push origin ft/team-page
+
+git checkout main
+git checkout -b ft/contact-page
+git checkout ft/team-page
+git log  # Copy the commit hash
+git checkout ft/contact-page
+git cherry-pick <commit_hash>
+touch contact.html
+git add contact.html
+git commit -m "Add contact.html page"
+git push origin ft/contact-page
+
+git checkout -b ft/faq-page
+touch faq.html
+git add faq.html
+git commit -m "Add faq.html page"
+git push origin ft/faq-page
+
+git checkout ft/team-page
+git revert <commit_hash>
+git push origin ft/team-page
+```
