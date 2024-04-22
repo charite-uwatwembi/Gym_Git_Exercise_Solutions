@@ -236,3 +236,63 @@ $```
 # Bundle 2
 
 ## Exercise 1
+
+```bash
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        service.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        modified:   README.md
+        new file:   service.html
+
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$ git commit -m "Add services page"
+[ft/bundle-2 1e65b75] Add services page
+ 2 files changed, 149 insertions(+), 1 deletion(-)        
+ create mode 100644 service.html
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$ git push -u origin ft/bundle-2
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.96 KiB | 1002.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0      
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/bundle-2)
+$```
+
+## Exercise 2
+
