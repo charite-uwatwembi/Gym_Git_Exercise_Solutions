@@ -504,3 +504,98 @@ To https://github.com/charite-uwatwembi/second.git
 
 Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
 $```
+
+## Exercise 2
+
+```bash 
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)
+$ ls
+home.html  README.md  service.html
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git commit -m "Add initial footer content"
+[ft/footer ebce339] Add initial footer content
+ 1 file changed, 1 insertion(+)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git commit -m "Update footer with more content"
+On branch ft/footer
+nothing to commit, working tree clean    
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git commit -m "Update footer with more content"
+[ft/footer bceb88b] Update footer with more content
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git push -u origin ft/footer
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.      
+Delta compression using up to 8 threads  
+Compressing objects: 100% (6/6), done.   
+Writing objects: 100% (6/6), 707 bytes | 176.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions/pull/new/ft/footer
+remote:
+To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/footer)     
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/squashing)  
+$ git merge --squash ft/footer
+Updating 75036fb..bceb88b
+Fast-forward
+Squash commit -- not updating HEAD       
+ home.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/squashing)  
+$ git commit -m "Footer changes squashing"
+[ft/squashing d9bf26c] Footer changes squashing
+ 1 file changed, 1 insertion(+)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/squashing)  
+$ git push -u origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.      
+Delta compression using up to 8 threads  
+Compressing objects: 100% (3/3), done.   
+Writing objects: 100% (3/3), 383 bytes | 191.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/squashing)  
+$```
