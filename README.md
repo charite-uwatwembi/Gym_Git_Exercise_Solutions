@@ -100,3 +100,139 @@ To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
 Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
 $
 ```
+
+## Exercise 2
+
+```bash
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ ls
+Home.html  README.md
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash
+No local changes to save
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash list
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+y/Studies/the_gym/GIT-EXERCISES (dev)
+$ git add  about.html
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 728ae20 update readme
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash list
+stash@{0}: WIP on dev: 728ae20 update readme
+stash@{1}: WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git add  team.html
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash list
+stash@{0}: WIP on dev: 728ae20 update readme
+stash@{1}: WIP on dev: 728ae20 update readme
+stash@{2}: WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash pop stash@{0}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        new file:   team.html
+
+Dropped stash@{0} (d5cc9719e36562d64ad0aee31e8ac829e6af3963)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        new file:   about.html
+
+Dropped stash@{1} (4776e47a58cb5b76d85a06cd89a2f2f2ff884c8a)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        new file:   Home.html
+        new file:   about.html
+
+Dropped stash@{1} (3b1293823446ebcb3e1f2428689f8dd87cad7623)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash list
+stash@{0}: WIP on dev: 728ae20 update readme
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash pop stash@{0}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)       
+        new file:   Home.html
+        new file:   about.html
+        new file:   team.html
+
+Dropped stash@{0} (9d67667f8e89e90b40cac9f0a908f929c5913b32)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git commit -m "Add home and about pages"
+[dev 8295846] Add home and about pages
+ 3 files changed, 37 insertions(+)
+ create mode 100644 Home.html
+ create mode 100644 about.html
+ create mode 100644 team.html
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 752 bytes | 188.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0      
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
+   728ae20..8295846  dev -> dev
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git stash list
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$ git reset --hard
+HEAD is now at 8295846 Add home and about pages
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (dev)
+$```
+
+# Bundle 2
+
+## Exercise 1
