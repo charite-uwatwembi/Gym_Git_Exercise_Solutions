@@ -443,3 +443,64 @@ git checkout ft/team-page
 git revert <commit_hash>
 git push origin ft/team-page
 ```
+# Bundle 4
+## Exercise 1
+
+```bash 
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git add remote git-copy https://github.com/charite-uwatwembi/second.git
+fatal: pathspec 'remote' did not match any files
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git remote
+origin
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git remote  add git-copy https://github
+.com/charite-uwatwembi/second.git
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git remote
+git-copy
+origin
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git add .
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git commit -m "Update home page"
+[main 99af54f] Update home page
+ 1 file changed, 1 insertion(+)
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.      
+Delta compression using up to 8 threads  
+Compressing objects: 100% (3/3), done.   
+Writing objects: 100% (3/3), 383 bytes | 95.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/charite-uwatwembi/Gym_Git_Exercise_Solutions.git
+   d2ad487..99af54f  main -> main        
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$ git push git-copy main
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.    
+Delta compression using up to 8 threads  
+Compressing objects: 100% (16/16), done. 
+Writing objects: 100% (18/18), 4.27 KiB | 486.00 KiB/s, done.
+Total 18 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/charite-uwatwembi/second.git
+ * [new branch]      main -> main        
+
+Hp@DESKTOP-1JCVV8Q MINGW64 /d/Study/Studies/the_gym/GIT-EXERCISES (main)
+$```
